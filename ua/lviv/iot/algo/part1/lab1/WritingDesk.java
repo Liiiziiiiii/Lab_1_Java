@@ -13,7 +13,7 @@ public class WritingDesk {
     private String hasKeyboardTray;     //boolean
     private int maxWeightCapacity;
     private int currentHeight;
-    private int maxHeight;
+    private final int maxHeight = 100;
 
     public final int centimeters = 2;
 
@@ -26,7 +26,7 @@ public class WritingDesk {
     public static void main(String[] args) {
         WritingDesk[] desks = new WritingDesk[4];
         desks[0] = new WritingDesk();
-        desks[1] = new WritingDesk(4, "yes", 9, 2, 22);
+        desks[1] = new WritingDesk(4, "yes", 9, 2);
         desks[2] = WritingDesk.getInstance();
         desks[3] = WritingDesk.getInstance();
 
